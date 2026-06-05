@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "vanilastandardization",
+	"version": "${version}",
+	"name": "vanila standardization",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "MIT",
+	"icon": "assets/vanilastandardization/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.naythantouqe.vanila_standardization.VanilaStandardization"
+		],
+		"fabric-datagen": [
+			"com.naythantouqe.vanila_standardization.VanilaStandardizationDataGenerator"
+		],
+		"client": [
+			"com.naythantouqe.vanila_standardization.VanilaStandardizationClient"
+		]
+	},
+	"mixins": [
+		"vanilastandardization.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
